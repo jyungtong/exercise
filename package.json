@@ -1,7 +1,7 @@
 {
   "name": "gdp-coding-exercise",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": "git@github.com:tuxtong/exercise.git",
   "author": "tux tong <tux@dd.express>",
   "license": "MIT",

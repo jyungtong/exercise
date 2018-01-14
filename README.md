@@ -116,3 +116,24 @@ yarn test
 ```
 
 You can find the [Integration Test](src/__test__/integration.test.js) which can show you how the app is working.
+
+## File Sturture
+.
+├── poc             # Proof of concept
+│   ├── __test__    # Unit Test
+│   ├── checkout.js # Main calculating logic
+│   └── fixture.js  # Test data
+├── src             # Main source code
+│   ├── controllers # Controllers for API routing
+│   ├── models      # Models for data store
+│   ├── routes      # API Routing
+│   ├── __test__    # Integration test
+│   ├── utils       # Shared library
+│   ├── config.js   # Application runtime config
+│   └── index.js    # Main entry
+├── package.json
+├── README.md
+├── TODO
+└── yarn.lock
+
+The main logic for checkout located at [src/models/utils/checkout.js](src/models/utils/checkout.js)

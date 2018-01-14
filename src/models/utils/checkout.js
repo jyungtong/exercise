@@ -15,7 +15,7 @@ export default function ({ discounts, cart, products }) {
     const { price: basePrice, ...baseProduct } = _.find(products, ['id', productId])
 
     /*
-     * Check if user has has discount for the product
+     * Check if user has discount for the product
      */
     const discountProduct = discounts &&
                             discounts.length > 0 &&
