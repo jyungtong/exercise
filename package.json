@@ -1,0 +1,43 @@
+{
+  "name": "gdp-coding-exercise",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tuxtong/exercise.git",
+  "author": "tux tong <tux@dd.express>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "husky": "^0.14.3",
+    "rimraf": "^2.6.2",
+    "standard": "^10.0.3",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "express": "^4.16.2",
+    "joi": "^13.1.0",
+    "lodash": "^4.17.4"
+  },
+  "ava": {
+    "require": "babel-register",
+    "babel": "inherit"
+  },
+  "standard": {
+    "ignore": [
+      "dist"
+    ]
+  },
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "yarn lint && ava **/__test__/**/*.test.js",
+    "test:watch": "yarn test --watch",
+    "precommit": "yarn test && git add .",
+    "build": "rimraf dist && babel src -d dist --ignore __test__",
+    "start": "yarn build && node dist/index.js"
+  }
+}
