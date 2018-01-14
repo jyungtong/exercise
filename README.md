@@ -118,6 +118,7 @@ yarn test
 You can find the [Integration Test](src/__test__/integration.test.js) which can show you how the app is working.
 
 ## File Sturture
+```
 .
 ├── poc             # Proof of concept
 │   ├── __test__    # Unit Test
@@ -135,5 +136,6 @@ You can find the [Integration Test](src/__test__/integration.test.js) which can 
 ├── README.md
 ├── TODO
 └── yarn.lock
+```
 
 The main logic for checkout located at [src/models/utils/checkout.js](src/models/utils/checkout.js)
