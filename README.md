@@ -11,7 +11,8 @@ yarn
 yarn start
 ```
 
-### Create a new user
+### User API
+#### Create a new user
 ```sh
 curl -XPOST \
       -H'content-type: application/json' \
@@ -22,14 +23,15 @@ curl -XPOST \
       }'
 ```
 
-### List users
+#### List users
 ```sh
 curl -XGET \
       -H'content-type: application/json' \
       localhost:8080/api/users/list \
 ```
 
-### Get user cart
+### Cart API
+#### Get user cart
 ```sh
 curl -XGET -H'content-type: application/json' \
       -H'x-auth-username: testuser' \
@@ -37,7 +39,7 @@ curl -XGET -H'content-type: application/json' \
       localhost:8080/api/carts/get
 ```
 
-### Add products to cart
+#### Add products to cart
 ```sh
 curl -XPOST -H'content-type: application/json' \
       -H'x-auth-username: testuser' \
@@ -49,7 +51,7 @@ curl -XPOST -H'content-type: application/json' \
       }'
 ```
 
-### Reduce product count in cart
+#### Reduce product count in cart
 ```sh
 curl -XPOST -H'content-type: application/json' \
       -H'x-auth-username: testuser' \
@@ -61,7 +63,7 @@ curl -XPOST -H'content-type: application/json' \
       }'
 ```
 
-### Checkout the cart
+#### Checkout the cart
 ```sh
 curl -XPOST -H'content-type: application/json' \
       -H'x-auth-username: testuser' \
@@ -69,7 +71,8 @@ curl -XPOST -H'content-type: application/json' \
       localhost:8080/api/carts/checkout
 ```
 
-### Add discount package to user
+### Discount API
+#### Add discount package to user
 1. This will add `x-for-y` discount type:
 ```sh
 curl -XPOST -H'content-type: application/json' \
@@ -96,7 +99,7 @@ curl -XPOST -H'content-type: application/json' \
       }'
 ```
 
-### Remove discount package from user
+#### Remove discount package from user
 ```sh
 curl -XPOST -H'content-type: application/json' \
       localhost:8080/api/users/discounts/remove \
