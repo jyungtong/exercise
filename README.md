@@ -11,6 +11,12 @@ yarn
 yarn start
 ```
 
+## Demo API Endpoint
+You can try out the demo API endpoint over here
+```
+https://gdp-exercise.herokuapp.com
+```
+
 ### User API
 #### Create a new user
 ```sh

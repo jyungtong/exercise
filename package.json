@@ -38,6 +38,8 @@
     "test:watch": "yarn test --watch",
     "precommit": "yarn test && git add .",
     "build": "rimraf dist && babel src -d dist --ignore __test__",
-    "start": "yarn build && node dist/index.js"
+    "start": "yarn build && node dist/index.js",
+    "start:production": "node dist/index.js",
+    "deploy:heroku": "yarn build && heroku container:push web -a gdp-exercise"
   }
 }
