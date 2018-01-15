@@ -5,6 +5,7 @@
 * [Installation](#installation)
 * [Usage Example](#usage-example)
 * [Demo API Endpoint](#demo-api-endpoint)
+* [API](#api)
   + [User API](#user-api)
     - [Create a new user](#create-a-new-user)
     - [List users](#list-users)
@@ -36,6 +37,7 @@ You can try out the demo API endpoint over here
 https://gdp-exercise.herokuapp.com
 ```
 
+## API
 ### User API
 #### Create a new user
 ```sh
