@@ -1,6 +1,25 @@
 # GDP Coding Exercise
 > Calculate different discount for different user
 
+## Table of Contents
+* [Installation](#installation)
+* [Usage Example](#usage-example)
+* [Demo API Endpoint](#demo-api-endpoint)
+  + [User API](#user-api)
+    - [Create a new user](#create-a-new-user)
+    - [List users](#list-users)
+  + [Cart API](#cart-api)
+    - [Get user cart](#get-user-cart)
+    - [Add products to cart](#add-products-to-cart)
+    - [Reduce product count in cart](#reduce-product-count-in-cart)
+    - [Checkout the cart](#checkout-the-cart)
+  + [Discount API](#discount-api)
+    - [Add discount package to user](#add-discount-package-to-user)
+    - [Remove discount package from user](#remove-discount-package-from-user)
+* [Testing](#testing)
+* [File Sturture](#file-sturture)
+* [Yarn `command`](#yarn-command)
+
 ## Installation
 ```sh
 yarn
@@ -145,3 +164,13 @@ You can find the [Integration Test](src/__test__/integration.test.js) which can 
 ```
 
 The main logic for checkout located at [src/models/utils/checkout.js](src/models/utils/checkout.js)
+
+## Yarn `command`
+| Commands           | Description                                                  |
+|--------------------|--------------------------------------------------------------|
+| `lint`             | StandardJS linting the source code and fix minor lint issues |
+| `test`             | Lint and test the application                                |
+| `test:watch`       | Watch the application for changes and retest the application |
+| `build`            | Build the application into `dist` folder                     |
+| `start`            | Build the app and start                                      |
+| `start:production` | Production start without building the app, use in Docker     |
