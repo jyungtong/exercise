@@ -54,7 +54,7 @@ curl -XPOST \
 ```sh
 curl -XGET \
       -H'content-type: application/json' \
-      localhost:8080/api/users/list \
+      localhost:8080/api/users/list
 ```
 
 ### Cart API
